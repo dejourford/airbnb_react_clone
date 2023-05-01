@@ -1,0 +1,27 @@
+
+
+.kobeImg {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 1em;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+.fa-star {
+    color: red;
+}
+
+.cardRate {
+    font-weight: 800;
+}
