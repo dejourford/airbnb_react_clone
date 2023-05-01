@@ -1,3 +1,5 @@
 .featureSection {
     padding: 2em;
+    display: flex;
+    gap: 2em;
 }

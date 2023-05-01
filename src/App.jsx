@@ -9,6 +9,7 @@ export default function App() {
             <Hero />
             <div className="featureSection">
                 <Card />
+                <Card />
             </div>
             
         </div>
