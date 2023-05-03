@@ -6,13 +6,22 @@ import CardData from "./data.js"
 
 
 export default function App() {
-    console.log(CardData)
+    const cardElement = CardData.map(cardItem => {
+        return ( 
+            <Card
+                image={cardItem.image}
+                rating={cardItem.rating}
+                title={cardItem.title}
+                rate={cardItem.rate}
+            />
+        )
+    } )
     return (
         <div className="container">
             <Navigation />
             <Hero />
             <div className="featureSection">
-                
+                {cardElement}
             </div>
             
         </div>

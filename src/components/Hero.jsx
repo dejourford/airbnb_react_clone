@@ -1,9 +1,9 @@
-import HeroImg from "../assets/images/house.jpg"
+
 import "./hero.css"
 export default function Hero() {
     return (
         <div className="heroSection">
-            <img className="houseImg" src={HeroImg} alt="modern house" />
+            <img className="houseImg" src='/public/images/house.jpg' alt="modern house" />
 
            
             <div className="heroText">
