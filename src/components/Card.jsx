@@ -1,18 +1,18 @@
 import "./card.css"
-import KobeImage from "../assets/images/kobe.jpeg"
 
-export default function Card() {
+
+export default function Card(props) {
     return (
     
     <div className="card">
-        <img className="kobeImg" src={KobeImage} alt="kobe bryant image" />
+        <img className="cardImg" src= {props.image} alt="card image" />
         
         <div className="rating">
             <i className="fa-solid fa-star"></i>
-            <p>5.0 (6)-USA</p>
+            <p>{props.rating}</p>
         </div>
-        <p className="cardText">Life lessons with Kobe Bryant</p>
-        <p className="cardRate">From $136 / person</p>
+        <p className="cardText">{props.title}</p>
+        <p className="cardRate">{props.rate}</p>
         
     </div>
     
